@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="39904" started-at="2020-03-25T17:44:46 IST" finished-at="2020-03-25T17:45:26 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="39904" started-at="2020-03-25T17:44:46 IST" finished-at="2020-03-25T17:45:26 IST">
+      <class name="testng.multibtest">
+        <test-method status="PASS" signature="executSessionThree()[pri:0, instance:testng.multibtest@4b4523f8]" name="executSessionThree" duration-ms="37583" started-at="2020-03-25T17:44:47 IST" finished-at="2020-03-25T17:45:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executSessionThree -->
+        <test-method status="PASS" signature="executeSessionTwo()[pri:0, instance:testng.multibtest@4b4523f8]" name="executeSessionTwo" duration-ms="39767" started-at="2020-03-25T17:44:47 IST" finished-at="2020-03-25T17:45:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeSessionTwo -->
+        <test-method status="PASS" signature="executSessionOne()[pri:0, instance:testng.multibtest@4b4523f8]" name="executSessionOne" duration-ms="37583" started-at="2020-03-25T17:44:47 IST" finished-at="2020-03-25T17:45:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executSessionOne -->
+      </class> <!-- testng.multibtest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
