@@ -1,0 +1,30 @@
+
+Download Standalone jar both hub and node syastems
+
+Creating hub in my pc 
+ 
+java -jar selenium-server-standalone-3.14.0.jar -role hub
+
+Creating node in other pc
+
+java -Dwebdriver.gecko.driver=”C:\geckodriver.exe” -jar selenium-server-standalone-3.4.0.jar -role node -hub http://192.168.1.3:4444/grid/register -port 5566
+
+If we go to 
+
+http://localhost:4444/grid/console, you will see all the browsers connected in the grid system
+
+
+
+Initialize the RemoteWebDriver object like below
+
+
+driver = new RemoteWebDriver(new URL(“http://192.168.1.97:5566/wd/hub”), capability);
+ Here 192.168.1.97 is the IP address of the Node system and 5566 is the port Number 
+
+DesiredCapabilities capability = DesiredCapabilities.chrome();
+        		capability.setBrowserName("chrome");
+       		capability.setPlatform(Platform.Windows); 
+        	driver = new RemoteWebDriver(new URL("http://192.168.1.110:5567/wd/hub"), capability);
+        		driver.manage().window().maximize();
+
+
